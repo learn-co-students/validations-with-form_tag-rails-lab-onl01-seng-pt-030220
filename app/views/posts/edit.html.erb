@@ -2,6 +2,7 @@
 
 <% if @post.errors.any? %>
   <div id="error_explanation">
+  <h2>You have the following errors: </h2>
     <ul>
     <% @post.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
